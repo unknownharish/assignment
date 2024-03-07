@@ -31,7 +31,7 @@ export default function DialogeBox(props) {
 
 
     return (
-        <div className="bg-blue-100 h-[30vh] w-4/12 p-5 fixed rounded-lg flex flex-col items-center">
+        <div className="bg-blue-100 md:h-[30vh] md:w-4/12 p-5 fixed rounded-lg flex flex-col items-center">
 
             <h4 className="text-2xl font-medium">Add Your Message here .! </h4>
 

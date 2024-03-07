@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -11,7 +12,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+
+        <div className="bg-violet-300 ">
+          <ul className="flex py-4">
+            <li className="mx-4 cursor-pointer p-2 hover:bg-white hover:text-black hover:rounded-md"><Link href={'/'}>Task1</Link></li>
+            <li className="cursor-pointer p-2 hover:bg-white hover:text-black hover:rounded-md"><Link href={'/task2'}>Task2</Link></li>
+          </ul>
+        </div>
+
+        {children}
+
+      </body>
     </html>
   );
 }
